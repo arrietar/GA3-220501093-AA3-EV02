@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta Musical</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Encuesta Musical</h1>
+
+    <form id="personaForm">
+      <h3>Datos personales</h3>
+      <input type="text" id="nombre" placeholder="Nombre completo" required>
+      <input type="text" id="cedula" placeholder="Cédula" required>
+      <input type="date" id="fechaNacimiento" required>
+      <input type="email" id="correo" placeholder="Correo electrónico" required>
+      <input type="text" id="ciudadResidencia" placeholder="Ciudad de residencia" required>
+      <input type="text" id="ciudadOrigen" placeholder="Ciudad de origen" required>
+
+      <h3>Canciones favoritas</h3>
+      <input type="text" id="artista1" placeholder="Artista canción 1" required>
+      <input type="text" id="titulo1" placeholder="Título canción 1" required>
+      <input type="text" id="artista2" placeholder="Artista canción 2" required>
+      <input type="text" id="titulo2" placeholder="Título canción 2" required>
+      <input type="text" id="artista3" placeholder="Artista canción 3" required>
+      <input type="text" id="titulo3" placeholder="Título canción 3" required>
+
+      <button type="submit">Agregar Persona</button>
+    </form>
+
+    <hr>
+
+    <form id="consultaForm">
+      <h3>Consultar información por posición</h3>
+      <input type="number" id="posicion" min="0" max="5" placeholder="Ingrese posición (0-5)">
+      <button type="submit">Consultar</button>
+    </form>
+
+    <div id="resultadoConsulta"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
