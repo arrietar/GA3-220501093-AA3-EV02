@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Ejercicios JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Solución Taller Algorítmico - JavaScript</h1>
+    </header>
+
+    <main>
+        <section id="problema1">
+            <h2>1. Cálculo de área o perímetro de figuras planas</h2>
+            <label for="figura">Seleccione la figura:</label>
+            <select id="figura">
+                <option value="triangulo">Triángulo</option>
+                <option value="rectangulo">Rectángulo</option>
+                <option value="cuadrado">Cuadrado</option>
+                <option value="circulo">Círculo</option>
+            </select>
+
+            <label for="operacion">Seleccione la operación:</label>
+            <select id="operacion">
+                <option value="area">Área</option>
+                <option value="perimetro">Perímetro</option>
+            </select>
+
+            <div id="inputs"></div>
+
+            <button onclick="calcularFigura()">Calcular</button>
+            <p id="resultado"></p>
+        </section>
+
+        <!-- Sección para los demás problemas en futuro -->
+    </main>
+
+    <footer>
+        <p>Desarrollado para Evidencia GA3-220501093-AA3-EV02</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
