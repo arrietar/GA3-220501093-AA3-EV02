@@ -8,12 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>Registro de Edades</h1>
-        <p>Ingrese las edades de 10 personas (entre 1 y 120 años):</p>
-        <div id="entradas">
-            <!-- Entradas generadas por JS -->
-        </div>
-        <button onclick="procesarEdades()">Procesar</button>
+        <h1>Análisis de Edades</h1>
+        <form id="edadForm">
+            <label for="edades">Ingrese las 10 edades separadas por comas:</label>
+            <input type="text" id="edades" name="edades" placeholder="Ej: 12, 18, 25, 30, 45, 60, 75, 80, 90, 100" required />
+            <button type="submit">Analizar</button>
+        </form>
         <div id="resultados"></div>
     </div>
     <script src="script.js"></script>
